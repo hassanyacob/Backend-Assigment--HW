@@ -1,7 +1,8 @@
-<html>
-<body>
+<?php
+    $arr = array(
+        'name'     => $_POST['name'],
+        'massage'    => $_POST['massage']); 
+    $json_string = json_encode($arr);
+    echo $json_string;
 
-massage: <?php echo $_POST["massage"]; ?><br>
-name:    <?php echo $_POST["name"]; ?>
-</body>
-</html>
+?>
